@@ -1,0 +1,30 @@
+.container {
+    width: 94%;
+    min-height: 50vh;
+    padding: 0 0 12vh 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.categoryName {
+    width: 29vw;
+    height: 7.778vh;
+    background-color: #202020;;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 14px;
+}
+
+.videos {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
