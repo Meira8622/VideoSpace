@@ -17,9 +17,8 @@ function Banner() {
     const featured = randX(dataBase.length)
 
     return <section className={styles.banner}>
-        <div className={styles.bannerBackground}></div>
         <div className={styles.container}>
-            <div>
+            <div className={styles.info}>
                 <h1>{dataBase[featured].category}</h1>
                 
                 <div className={styles.description}>
