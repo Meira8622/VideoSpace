@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VideoSpace/static/css/main.5f2ffa7e.css",
+    "main.js": "/VideoSpace/static/js/main.88e72f52.js",
+    "index.html": "/VideoSpace/index.html",
+    "main.5f2ffa7e.css.map": "/VideoSpace/static/css/main.5f2ffa7e.css.map",
+    "main.88e72f52.js.map": "/VideoSpace/static/js/main.88e72f52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f2ffa7e.css",
+    "static/js/main.88e72f52.js"
+  ]
+}
