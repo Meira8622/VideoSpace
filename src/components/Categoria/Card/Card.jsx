@@ -14,12 +14,8 @@ function Card({id, image, url}) {
     }
 
     const borrarId = ()=> {
-        console.log(id)
         const updatedDataBase = dataBase.filter(element => element.id !== id )
-        console.log(dataBase)
-        console.log(updatedDataBase)
         setDataBase(updatedDataBase)
-            
         dataBaseDelete(id)
     }
 
@@ -29,15 +25,14 @@ function Card({id, image, url}) {
         
         <div className={styles.buttonBox}>
             <button onClick={()=>borrarId()}>
-                <img src="/img/trash-solid.svg" alt="icon"></img>
+                <img src={`${process.env.PUBLIC_URL}/img/trash-solid.svg`} alt="icon"></img>
                 BORRRAR
             </button>
             <button onClick={()=>{
                 setModalState(true)
                 setEditId(id)
-                // console.log(dataBase.filter(element=>element.id===id))
             }}>
-                <img src="/img/pencil-solid.svg" alt="icon"></img>
+                <img src={`${process.env.PUBLIC_URL}/img/pencil-solid.svg`} alt="icon"></img>
                 EDITAR
             </button>
         </div>

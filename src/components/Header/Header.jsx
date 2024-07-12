@@ -5,10 +5,7 @@ import { useEffect, useState } from "react"
 
 function Header() {
 
-    // console.log(window.location.pathname) 
-
     const location = useLocation()
-
     const [buttonState, setButtonstate] = useState("")
     const [newVideoButtonState, setNewVideoButtonState] = useState("")
 
@@ -18,7 +15,7 @@ function Header() {
     }, [location])
 
     return <header className={styles.cabecera}>
-        <img src="/img/patrick.jpg" alt="logo"/>
+        <img src={`${process.env.PUBLIC_URL}/img/patrick.jpg`} alt="logo"/>
         <div>
             <Link to="/">
                 <Button text="Home" state={buttonState}/>

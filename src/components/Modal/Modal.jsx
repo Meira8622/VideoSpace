@@ -19,10 +19,7 @@ function Modal({video}) {
             throw new Error("Error al actualizar el recurso")
         }
 
-        // const newData = dataBase.filter(item=>item.id!==editId)
         setDataBase(dataBase.filter(item=>item.id!==editId))
-
-        // const data = (await fetch("https://665cf951e88051d6040526f3.mockapi.io/api/videos")).json()
         setDataBase(datos => [...datos, updatedElement])
     }
 
@@ -55,7 +52,7 @@ function Modal({video}) {
         <div className={styles.modal}>
             <form method="dialog" className={styles.closeButtonForm}>
                 <button onClick={()=>setModalState(false)}>
-                    <img src="/img/x-solid.svg" alt="icon"></img>
+                    <img src={`${process.env.PUBLIC_URL}/img/x-solid.svg`} alt="icon"></img>
                 </button>
             </form>
 
