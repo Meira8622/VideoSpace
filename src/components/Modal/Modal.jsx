@@ -29,7 +29,6 @@ function Modal({video}) {
     const handleSave = (e) => {
         e.preventDefault()
         const form = e.target.closest("form")
-        // console.log("forro",form.checkValidity())
         if(form.checkValidity()) {
             console.log("todo bien")
 
