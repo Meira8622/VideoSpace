@@ -15,7 +15,7 @@ function Header() {
     }, [location])
 
     return <header className={styles.cabecera}>
-        <img src={`${process.env.PUBLIC_URL}/img/patrick.jpg`} alt="logo"/>
+        <img src={`${process.env.PUBLIC_URL}/img/logo.png`} alt="logo"/>
         <div>
             <Link to="/">
                 <Button text="Home" state={buttonState}/>
